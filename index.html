@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Book Shop</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<div class="header">
+				<div class="container-row">
+					<div class="header-main">
+						<div class="header-logo">
+							<a href="/" target="_blank">
+								<h2>BOOKERYY</h2>
+							</a>
+						</div>
+						<div class="login-wrapper">
+							<div class="btn-wrap">
+								<a href="" class="button__primary">
+									<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="presentation" class="icon icon-account" fill="none" viewBox="0 0 18 19">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M6 4.5a3 3 0 116 0 3 3 0 01-6 0zm3-4a4 4 0 100 8 4 4 0 000-8zm5.58 12.15c1.12.82 1.83 2.24 1.91 4.85H1.51c.08-2.6.79-4.03 1.9-4.85C4.66 11.75 6.5 11.5 9 11.5s4.35.26 5.58 1.15zM9 10.5c-2.5 0-4.65.24-6.17 1.35C1.27 12.98.5 14.93.5 18v.5h17V18c0-3.07-.77-5.02-2.33-6.15-1.52-1.1-3.67-1.35-6.17-1.35z" fill="currentColor">
+							  </path></svg>
+									Login / Register
+									
+								  </a>
+							</div>
+						   
+						</div>
+					</div>
+				   
+				</div>
+			</div>
+		   
+			<div class="header-nav">
+				<ul class="navbar">
+					<li><a href=""> HOME </a></li>
+					<li><a href=""> PRODUCT </a></li>
+					<li><a href=""> CHECKOUT </a></li>
+					<li><a href=""> ABOUT </a></li>
+					<li><a href=""> CONTACT US </a></li>
+					<form class="search_form">
+						<input
+							type="search"
+							class="form-control"
+							placeholder="Search here..." />
+						<button class type="submit">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="#fff"
+								width="35px"
+								height="35px"
+								viewBox="0 0 1024 1024">
+								<path
+									d="M768 713.7L630.2 575.9c22.3-32.8 35.4-72.4 35.4-115.1 0-113.1-91.7-204.8-204.8-204.8S256 347.7 256 460.8s91.7 204.8 204.8 204.8c42.7 0 82.3-13.1 115.1-35.4L713.7 768l54.3-54.3zM332.8 460.8c0-70.6 57.4-128 128-128s128 57.4 128 128-57.4 128-128 128-128-57.4-128-128z" />
+							</svg>
+						</button>
+					</form>
+				</ul>
+			</div>
+		</header>
+
+		<main>
+			<!-- banner -->
+			<section class="banner">
+				<div class="container-row">
+					<div class="banner-wrapper">
+						<div class="banner-contents">
+							<div class="banner-heading">
+								<h1>About the Exhibition</h1>
+								<h2>
+									Igniting progress, accelerating innovation, and shaping a
+									sustainable future.
+								</h2>
+							</div>
+						</div>
+						<div class="btn-wrap">
+							<div class="btns">
+								<a href="/" target="_blank" class="button__primary">Explore</a>
+							</div>
+							<div class="btns">
+								<a href="/" target="_blank" class="button__primary">VISITOR
+									REGISTRATION</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- NEW ARRIVALS SECTION -->
+			<section class="new-arrivals">
+				<div class="container-row">
+					<div class="main-heading">
+						<h2 class="heading-title heading-line">NEW ARRiVALS</h2>
+					</div>
+					<div class="new-arrival__tab-wrapper">
+						<div class="arrival-tab-wrapper">
+							<div class="arrival-tab-navs active" data-tab="tab-0" data-tab-content-class="arrival-tab-content">
+								<h4>All</h4>
+							</div>
+							<div class="arrival-tab-navs" data-tab="tab-1" data-tab-content-class="arrival-tab-content">
+								<h4>Comics</h4>
+							</div>
+							<div class="arrival-tab-navs" data-tab="tab-2" data-tab-content-class="arrival-tab-content">
+								<h4>Thrillers</h4>
+							</div>
+							<div class="arrival-tab-navs" data-tab="tab-3" data-tab-content-class="arrival-tab-content">
+								<h4>Romance</h4>
+							</div>
+							<div class="arrival-tab-navs" data-tab="tab-4" data-tab-content-class="arrival-tab-content">
+								<h4>Fantacy</h4>
+							</div>
+						</div>
+
+						<div class="arrival-tab-content active" data-id="tab-0" >
+							<div class="tab-content-wrapper">
+								<div class="tab-content-card">
+
+									<div class="tab-content-card-media">
+										<picture>
+											<img src="./images/book1.webp" alt srcset>
+										</picture>
+										<ul class="product-icons">
+											<li>
+												<a href="">
+													<svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px"
+														viewBox="0 0 24 24" fill="none">
+
+														<g clip-path="url(#clip0_105_1836)">
+
+															<path
+																d="M13 3.99976H6C4.89543 3.99976 4 4.89519 4 5.99976V17.9998C4 19.1043 4.89543 19.9998 6 19.9998H13M17 3.99976H18C19.1046 3.99976 20 4.89519 20 5.99976V6.99976M20 16.9998V17.9998C20 19.1043 19.1046 19.9998 18 19.9998H17M20 10.9998V12.9998M12 1.99976V21.9998"
+																stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+																stroke-width="1" />
+
+														</g>
+
+														<defs>
+
+															<clippath id="clip0_105_1836">
+
+																<rect fill="white" height="24"
+																	transform="translate(0 -0.000244141)" width="24" />
+
+															</clippath>
+
+														</defs>
+
+													</svg>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														fill="#fff"
+														width="35px"
+														height="35px"
+														viewBox="0 0 1024 1024">
+														<path
+															d="M768 713.7L630.2 575.9c22.3-32.8 35.4-72.4 35.4-115.1 0-113.1-91.7-204.8-204.8-204.8S256 347.7 256 460.8s91.7 204.8 204.8 204.8c42.7 0 82.3-13.1 115.1-35.4L713.7 768l54.3-54.3zM332.8 460.8c0-70.6 57.4-128 128-128s128 57.4 128 128-57.4 128-128 128-128-57.4-128-128z" />
+													</svg>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<svg width="18px" height="18px" xmlns="http://www.w3.org/2000/svg"
+														xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+														viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;"
+														xml:space="preserve">
+														<path
+															d="M3.3,17.5c-0.4,0-0.8-0.2-1.1-0.5c-0.3-0.3-0.5-0.7-0.5-1.1V6.2c0-0.4,0.2-0.8,0.5-1.1c0.3-0.3,0.7-0.5,1.1-0.5H5
+																c0-1.1,0.4-2.1,1.2-2.9S7.9,0.5,9,0.5s2.1,0.4,2.9,1.2S13,3.4,13,4.5h1.6c0.4,0,0.8,0.2,1.1,0.5s0.5,0.7,0.5,1.1v9.7
+																c0,0.4-0.2,0.8-0.5,1.1c-0.3,0.3-0.7,0.5-1.1,0.5H3.3z M3.3,15.9h11.3V6.2H3.3V15.9z M9,11c1.1,0,2.1-0.4,2.9-1.2S13,8.1,13,7h-1.6
+																c0,0.7-0.2,1.2-0.7,1.7c-0.5,0.5-1,0.7-1.7,0.7c-0.7,0-1.2-0.2-1.7-0.7C6.8,8.2,6.6,7.7,6.6,7H5c0,1.1,0.4,2.1,1.2,2.9S7.9,11,9,11z
+																 M6.6,4.5h4.9c0-0.7-0.2-1.2-0.7-1.7c-0.5-0.5-1-0.7-1.7-0.7c-0.7,0-1.2,0.2-1.7,0.7S6.6,3.9,6.6,4.5z M3.3,15.9V6.2V15.9z"
+															fill="currentcolor"></path>
+													</svg>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="25px"
+														height="25px" viewBox="0 0 24 24" id="favourite"
+														data-name="Line Color" class="icon line-color"><path id="primary"
+															d="M19.57,5.44a4.91,4.91,0,0,1,0,6.93L12,20,4.43,12.37A4.91,4.91,0,0,1,7.87,4a4.9,4.9,0,0,1,3.44,1.44,4.46,4.46,0,0,1,.69.88,4.46,4.46,0,0,1,.69-.88,4.83,4.83,0,0,1,6.88,0Z"
+															style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;" /></svg>
+												</a>
+											</li>
+
+										</ul>
+									</div>
+									<div class="tab-content-card-desc">
+										<p class="book-author">
+											SHAKESPear
+										</p>
+										<h5 class="book-title">
+											GAMES OF Thronews
+										</h5>
+										<p class="book-price">
+											€ 4.58
+										</p>
+									</div>
+
+								</div>
+								<div class="tab-content-card">
+
+									<div class="tab-content-card-media">
+										<picture>
+											<img src="./images/book9.jpg" alt srcset>
+										</picture>
+										<ul class="product-icons">
+											<li>
+												<a href>
+													<svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px"
+														viewBox="0 0 24 24" fill="none">
+
+														<g clip-path="url(#clip0_105_1836)">
+
+															<path
+																d="M13 3.99976H6C4.89543 3.99976 4 4.89519 4 5.99976V17.9998C4 19.1043 4.89543 19.9998 6 19.9998H13M17 3.99976H18C19.1046 3.99976 20 4.89519 20 5.99976V6.99976M20 16.9998V17.9998C20 19.1043 19.1046 19.9998 18 19.9998H17M20 10.9998V12.9998M12 1.99976V21.9998"
+																stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+																stroke-width="1" />
+
+														</g>
+
+														<defs>
+
+															<clippath id="clip0_105_1836">
+
+																<rect fill="white" height="24"
+																	transform="translate(0 -0.000244141)" width="24" />
+
+															</clippath>
+
+														</defs>
+
+													</svg>
+												</a>
+											</li>
+											<li>
+												<a href>
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														fill="#fff"
+														width="35px"
+														height="35px"
+														viewBox="0 0 1024 1024">
+														<path
+															d="M768 713.7L630.2 575.9c22.3-32.8 35.4-72.4 35.4-115.1 0-113.1-91.7-204.8-204.8-204.8S256 347.7 256 460.8s91.7 204.8 204.8 204.8c42.7 0 82.3-13.1 115.1-35.4L713.7 768l54.3-54.3zM332.8 460.8c0-70.6 57.4-128 128-128s128 57.4 128 128-57.4 128-128 128-128-57.4-128-128z" />
+													</svg>
+												</a>
+											</li>
+											<li>
+												<a href>
+													<svg width="18px" height="18px" xmlns="http://www.w3.org/2000/svg"
+														xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+														viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;"
+														xml:space="preserve">
+														<path
+															d="M3.3,17.5c-0.4,0-0.8-0.2-1.1-0.5c-0.3-0.3-0.5-0.7-0.5-1.1V6.2c0-0.4,0.2-0.8,0.5-1.1c0.3-0.3,0.7-0.5,1.1-0.5H5
+																c0-1.1,0.4-2.1,1.2-2.9S7.9,0.5,9,0.5s2.1,0.4,2.9,1.2S13,3.4,13,4.5h1.6c0.4,0,0.8,0.2,1.1,0.5s0.5,0.7,0.5,1.1v9.7
+																c0,0.4-0.2,0.8-0.5,1.1c-0.3,0.3-0.7,0.5-1.1,0.5H3.3z M3.3,15.9h11.3V6.2H3.3V15.9z M9,11c1.1,0,2.1-0.4,2.9-1.2S13,8.1,13,7h-1.6
+																c0,0.7-0.2,1.2-0.7,1.7c-0.5,0.5-1,0.7-1.7,0.7c-0.7,0-1.2-0.2-1.7-0.7C6.8,8.2,6.6,7.7,6.6,7H5c0,1.1,0.4,2.1,1.2,2.9S7.9,11,9,11z
+																 M6.6,4.5h4.9c0-0.7-0.2-1.2-0.7-1.7c-0.5-0.5-1-0.7-1.7-0.7c-0.7,0-1.2,0.2-1.7,0.7S6.6,3.9,6.6,4.5z M3.3,15.9V6.2V15.9z"
+															fill="currentcolor"></path>
+													</svg>
+												</a>
+											</li>
+											<li>
+												<a href>
+													<svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="25px"
+														height="25px" viewBox="0 0 24 24" id="favourite"
+														data-name="Line Color" class="icon line-color"><path id="primary"
+															d="M19.57,5.44a4.91,4.91,0,0,1,0,6.93L12,20,4.43,12.37A4.91,4.91,0,0,1,7.87,4a4.9,4.9,0,0,1,3.44,1.44,4.46,4.46,0,0,1,.69.88,4.46,4.46,0,0,1,.69-.88,4.83,4.83,0,0,1,6.88,0Z"
+															style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;" /></svg>
+												</a>
+											</li>
+
+										</ul>
+									</div>
+									<div class="tab-content-card-desc">
+										<p class="book-author">
+											SHAKESPear
+										</p>
+										<h5 class="book-title">
+											GAMES OF Thronews
+										</h5>
+										<p class="book-price">
+											€ 4.58
+										</p>
+									</div>
+
+								</div>
+								<div class="tab-content-card">
+
+									<div class="tab-content-card-media">
+										<picture>
+											<img src="./images/book10.jpg" alt srcset>
+										</picture>
+										<ul class="product-icons">
+											<li>
+												<a href>
+													<svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px"
+														viewBox="0 0 24 24" fill="none">
+
+														<g clip-path="url(#clip0_105_1836)">
+
+															<path
+																d="M13 3.99976H6C4.89543 3.99976 4 4.89519 4 5.99976V17.9998C4 19.1043 4.89543 19.9998 6 19.9998H13M17 3.99976H18C19.1046 3.99976 20 4.89519 20 5.99976V6.99976M20 16.9998V17.9998C20 19.1043 19.1046 19.9998 18 19.9998H17M20 10.9998V12.9998M12 1.99976V21.9998"
+																stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+																stroke-width="1" />
+
+														</g>
+
+														<defs>
+
+															<clippath id="clip0_105_1836">
+
+																<rect fill="white" height="24"
+																	transform="translate(0 -0.000244141)" width="24" />
+
+															</clippath>
+
+														</defs>
+
+													</svg>
+												</a>
+											</li>
+											<li>
+												<a href>
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														fill="#fff"
+														width="35px"
+														height="35px"
+														viewBox="0 0 1024 1024">
+														<path
+															d="M768 713.7L630.2 575.9c22.3-32.8 35.4-72.4 35.4-115.1 0-113.1-91.7-204.8-204.8-204.8S256 347.7 256 460.8s91.7 204.8 204.8 204.8c42.7 0 82.3-13.1 115.1-35.4L713.7 768l54.3-54.3zM332.8 460.8c0-70.6 57.4-128 128-128s128 57.4 128 128-57.4 128-128 128-128-57.4-128-128z" />
+													</svg>
+												</a>
+											</li>
+											<li>
+												<a href>
+													<svg width="18px" height="18px" xmlns="http://www.w3.org/2000/svg"
+														xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+														viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;"
+														xml:space="preserve">
+														<path
+															d="M3.3,17.5c-0.4,0-0.8-0.2-1.1-0.5c-0.3-0.3-0.5-0.7-0.5-1.1V6.2c0-0.4,0.2-0.8,0.5-1.1c0.3-0.3,0.7-0.5,1.1-0.5H5
+																c0-1.1,0.4-2.1,1.2-2.9S7.9,0.5,9,0.5s2.1,0.4,2.9,1.2S13,3.4,13,4.5h1.6c0.4,0,0.8,0.2,1.1,0.5s0.5,0.7,0.5,1.1v9.7
+																c0,0.4-0.2,0.8-0.5,1.1c-0.3,0.3-0.7,0.5-1.1,0.5H3.3z M3.3,15.9h11.3V6.2H3.3V15.9z M9,11c1.1,0,2.1-0.4,2.9-1.2S13,8.1,13,7h-1.6
+																c0,0.7-0.2,1.2-0.7,1.7c-0.5,0.5-1,0.7-1.7,0.7c-0.7,0-1.2-0.2-1.7-0.7C6.8,8.2,6.6,7.7,6.6,7H5c0,1.1,0.4,2.1,1.2,2.9S7.9,11,9,11z
+																 M6.6,4.5h4.9c0-0.7-0.2-1.2-0.7-1.7c-0.5-0.5-1-0.7-1.7-0.7c-0.7,0-1.2,0.2-1.7,0.7S6.6,3.9,6.6,4.5z M3.3,15.9V6.2V15.9z"
+															fill="currentcolor"></path>
+													</svg>
+												</a>
+											</li>
+											<li>
+												<a href>
+													<svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="25px"
+														height="25px" viewBox="0 0 24 24" id="favourite"
+														data-name="Line Color" class="icon line-color"><path id="primary"
+															d="M19.57,5.44a4.91,4.91,0,0,1,0,6.93L12,20,4.43,12.37A4.91,4.91,0,0,1,7.87,4a4.9,4.9,0,0,1,3.44,1.44,4.46,4.46,0,0,1,.69.88,4.46,4.46,0,0,1,.69-.88,4.83,4.83,0,0,1,6.88,0Z"
+															style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;" /></svg>
+												</a>
+											</li>
+
+										</ul>
+									</div>
+									<div class="tab-content-card-desc">
+										<p class="book-author">
+											SHAKESPear
+										</p>
+										<h5 class="book-title">
+											GAMES OF Thronews
+										</h5>
+										<p class="book-price">
+											€ 4.58
+										</p>
+									</div>
+
+								</div>
+								<div class="tab-content-card">
+
+									<div class="tab-content-card-media">
+										<picture>
+											<img src="./images/book12.webp" alt srcset>
+										</picture>
+										<ul class="product-icons">
+											<li>
+												<a href>
+													<svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px"
+														viewBox="0 0 24 24" fill="none">
+
+														<g clip-path="url(#clip0_105_1836)">
+
+															<path
+																d="M13 3.99976H6C4.89543 3.99976 4 4.89519 4 5.99976V17.9998C4 19.1043 4.89543 19.9998 6 19.9998H13M17 3.99976H18C19.1046 3.99976 20 4.89519 20 5.99976V6.99976M20 16.9998V17.9998C20 19.1043 19.1046 19.9998 18 19.9998H17M20 10.9998V12.9998M12 1.99976V21.9998"
+																stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+																stroke-width="1" />
+
+														</g>
+
+														<defs>
+
+															<clippath id="clip0_105_1836">
+
+																<rect fill="white" height="24"
+																	transform="translate(0 -0.000244141)" width="24" />
+
+															</clippath>
+
+														</defs>
+
+													</svg>
+												</a>
+											</li>
+											<li>
+												<a href>
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														fill="#fff"
+														width="30px"
+														height="30px"
+														viewBox="0 0 1024 1024">
+														<path
+															d="M768 713.7L630.2 575.9c22.3-32.8 35.4-72.4 35.4-115.1 0-113.1-91.7-204.8-204.8-204.8S256 347.7 256 460.8s91.7 204.8 204.8 204.8c42.7 0 82.3-13.1 115.1-35.4L713.7 768l54.3-54.3zM332.8 460.8c0-70.6 57.4-128 128-128s128 57.4 128 128-57.4 128-128 128-128-57.4-128-128z" />
+													</svg>
+												</a>
+											</li>
+											<li>
+												<a href>
+													<svg width="18px" height="18px" xmlns="http://www.w3.org/2000/svg"
+														xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+														viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;"
+														xml:space="preserve">
+														<path
+															d="M3.3,17.5c-0.4,0-0.8-0.2-1.1-0.5c-0.3-0.3-0.5-0.7-0.5-1.1V6.2c0-0.4,0.2-0.8,0.5-1.1c0.3-0.3,0.7-0.5,1.1-0.5H5
+																c0-1.1,0.4-2.1,1.2-2.9S7.9,0.5,9,0.5s2.1,0.4,2.9,1.2S13,3.4,13,4.5h1.6c0.4,0,0.8,0.2,1.1,0.5s0.5,0.7,0.5,1.1v9.7
+																c0,0.4-0.2,0.8-0.5,1.1c-0.3,0.3-0.7,0.5-1.1,0.5H3.3z M3.3,15.9h11.3V6.2H3.3V15.9z M9,11c1.1,0,2.1-0.4,2.9-1.2S13,8.1,13,7h-1.6
+																c0,0.7-0.2,1.2-0.7,1.7c-0.5,0.5-1,0.7-1.7,0.7c-0.7,0-1.2-0.2-1.7-0.7C6.8,8.2,6.6,7.7,6.6,7H5c0,1.1,0.4,2.1,1.2,2.9S7.9,11,9,11z
+																 M6.6,4.5h4.9c0-0.7-0.2-1.2-0.7-1.7c-0.5-0.5-1-0.7-1.7-0.7c-0.7,0-1.2,0.2-1.7,0.7S6.6,3.9,6.6,4.5z M3.3,15.9V6.2V15.9z"
+															fill="currentcolor"></path>
+													</svg>
+												</a>
+											</li>
+											<li>
+												<a href>
+													<svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="25px"
+														height="25px" viewBox="0 0 24 24" id="favourite"
+														data-name="Line Color" class="icon line-color"><path id="primary"
+															d="M19.57,5.44a4.91,4.91,0,0,1,0,6.93L12,20,4.43,12.37A4.91,4.91,0,0,1,7.87,4a4.9,4.9,0,0,1,3.44,1.44,4.46,4.46,0,0,1,.69.88,4.46,4.46,0,0,1,.69-.88,4.83,4.83,0,0,1,6.88,0Z"
+															style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;" /></svg>
+												</a>
+											</li>
+
+										</ul>
+									</div>
+									<div class="tab-content-card-desc">
+										<p class="book-author">
+											SHAKESPear
+										</p>
+										<h5 class="book-title">
+											GAMES OF Thronews
+										</h5>
+										<p class="book-price">
+											€ 4.58
+										</p>
+									</div>
+
+								</div>
+								<div class="tab-content-card">
+
+									<div class="tab-content-card-media">
+										<picture>
+											<img src="./images/book13.webp" alt srcset>
+										</picture>
+										<ul class="product-icons">
+											<li>
+												<a href>
+													<svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px"
+														viewBox="0 0 24 24" fill="none">
+
+														<g clip-path="url(#clip0_105_1836)">
+
+															<path
+																d="M13 3.99976H6C4.89543 3.99976 4 4.89519 4 5.99976V17.9998C4 19.1043 4.89543 19.9998 6 19.9998H13M17 3.99976H18C19.1046 3.99976 20 4.89519 20 5.99976V6.99976M20 16.9998V17.9998C20 19.1043 19.1046 19.9998 18 19.9998H17M20 10.9998V12.9998M12 1.99976V21.9998"
+																stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+																stroke-width="1" />
+
+														</g>
+
+														<defs>
+
+															<clippath id="clip0_105_1836">
+
+																<rect fill="white" height="24"
+																	transform="translate(0 -0.000244141)" width="24" />
+
+															</clippath>
+
+														</defs>
+
+													</svg>
+												</a>
+											</li>
+											<li>
+												<a href>
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														fill="#fff"
+														width="30px"
+														height="30px"
+														viewBox="0 0 1024 1024">
+														<path
+															d="M768 713.7L630.2 575.9c22.3-32.8 35.4-72.4 35.4-115.1 0-113.1-91.7-204.8-204.8-204.8S256 347.7 256 460.8s91.7 204.8 204.8 204.8c42.7 0 82.3-13.1 115.1-35.4L713.7 768l54.3-54.3zM332.8 460.8c0-70.6 57.4-128 128-128s128 57.4 128 128-57.4 128-128 128-128-57.4-128-128z" />
+													</svg>
+												</a>
+											</li>
+											<li>
+												<a href>
+													<svg width="18px" height="18px" xmlns="http://www.w3.org/2000/svg"
+														xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+														viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;"
+														xml:space="preserve">
+														<path
+															d="M3.3,17.5c-0.4,0-0.8-0.2-1.1-0.5c-0.3-0.3-0.5-0.7-0.5-1.1V6.2c0-0.4,0.2-0.8,0.5-1.1c0.3-0.3,0.7-0.5,1.1-0.5H5
+																c0-1.1,0.4-2.1,1.2-2.9S7.9,0.5,9,0.5s2.1,0.4,2.9,1.2S13,3.4,13,4.5h1.6c0.4,0,0.8,0.2,1.1,0.5s0.5,0.7,0.5,1.1v9.7
+																c0,0.4-0.2,0.8-0.5,1.1c-0.3,0.3-0.7,0.5-1.1,0.5H3.3z M3.3,15.9h11.3V6.2H3.3V15.9z M9,11c1.1,0,2.1-0.4,2.9-1.2S13,8.1,13,7h-1.6
+																c0,0.7-0.2,1.2-0.7,1.7c-0.5,0.5-1,0.7-1.7,0.7c-0.7,0-1.2-0.2-1.7-0.7C6.8,8.2,6.6,7.7,6.6,7H5c0,1.1,0.4,2.1,1.2,2.9S7.9,11,9,11z
+																 M6.6,4.5h4.9c0-0.7-0.2-1.2-0.7-1.7c-0.5-0.5-1-0.7-1.7-0.7c-0.7,0-1.2,0.2-1.7,0.7S6.6,3.9,6.6,4.5z M3.3,15.9V6.2V15.9z"
+															fill="currentcolor"></path>
+													</svg>
+												</a>
+											</li>
+											<li>
+												<a href>
+													<svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="25px"
+														height="25px" viewBox="0 0 24 24" id="favourite"
+														data-name="Line Color" class="icon line-color"><path id="primary"
+															d="M19.57,5.44a4.91,4.91,0,0,1,0,6.93L12,20,4.43,12.37A4.91,4.91,0,0,1,7.87,4a4.9,4.9,0,0,1,3.44,1.44,4.46,4.46,0,0,1,.69.88,4.46,4.46,0,0,1,.69-.88,4.83,4.83,0,0,1,6.88,0Z"
+															style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;" /></svg>
+												</a>
+											</li>
+
+										</ul>
+									</div>
+									<div class="tab-content-card-desc">
+										<p class="book-author">
+											SHAKESPear
+										</p>
+										<h5 class="book-title">
+											GAMES OF Thronews
+										</h5>
+										<p class="book-price">
+											€ 4.58
+										</p>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="arrival-tab-content" data-id="tab-1">
+							<div class="tab-content-wrapper">
+								<div class="tab-content-card">
+
+									<div class="tab-content-card-media">
+										<picture>
+											<img src="./images/book11.webp" alt srcset>
+										</picture>
+										<ul class="product-icons">
+											<li>
+												<a href="">
+													<svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px"
+														viewBox="0 0 24 24" fill="none">
+
+														<g clip-path="url(#clip0_105_1836)">
+
+															<path
+																d="M13 3.99976H6C4.89543 3.99976 4 4.89519 4 5.99976V17.9998C4 19.1043 4.89543 19.9998 6 19.9998H13M17 3.99976H18C19.1046 3.99976 20 4.89519 20 5.99976V6.99976M20 16.9998V17.9998C20 19.1043 19.1046 19.9998 18 19.9998H17M20 10.9998V12.9998M12 1.99976V21.9998"
+																stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+																stroke-width="1" />
+
+														</g>
+
+														<defs>
+
+															<clippath id="clip0_105_1836">
+
+																<rect fill="white" height="24"
+																	transform="translate(0 -0.000244141)" width="24" />
+
+															</clippath>
+
+														</defs>
+
+													</svg>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														fill="#fff"
+														width="35px"
+														height="35px"
+														viewBox="0 0 1024 1024">
+														<path
+															d="M768 713.7L630.2 575.9c22.3-32.8 35.4-72.4 35.4-115.1 0-113.1-91.7-204.8-204.8-204.8S256 347.7 256 460.8s91.7 204.8 204.8 204.8c42.7 0 82.3-13.1 115.1-35.4L713.7 768l54.3-54.3zM332.8 460.8c0-70.6 57.4-128 128-128s128 57.4 128 128-57.4 128-128 128-128-57.4-128-128z" />
+													</svg>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<svg width="18px" height="18px" xmlns="http://www.w3.org/2000/svg"
+														xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+														viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;"
+														xml:space="preserve">
+														<path
+															d="M3.3,17.5c-0.4,0-0.8-0.2-1.1-0.5c-0.3-0.3-0.5-0.7-0.5-1.1V6.2c0-0.4,0.2-0.8,0.5-1.1c0.3-0.3,0.7-0.5,1.1-0.5H5
+																c0-1.1,0.4-2.1,1.2-2.9S7.9,0.5,9,0.5s2.1,0.4,2.9,1.2S13,3.4,13,4.5h1.6c0.4,0,0.8,0.2,1.1,0.5s0.5,0.7,0.5,1.1v9.7
+																c0,0.4-0.2,0.8-0.5,1.1c-0.3,0.3-0.7,0.5-1.1,0.5H3.3z M3.3,15.9h11.3V6.2H3.3V15.9z M9,11c1.1,0,2.1-0.4,2.9-1.2S13,8.1,13,7h-1.6
+																c0,0.7-0.2,1.2-0.7,1.7c-0.5,0.5-1,0.7-1.7,0.7c-0.7,0-1.2-0.2-1.7-0.7C6.8,8.2,6.6,7.7,6.6,7H5c0,1.1,0.4,2.1,1.2,2.9S7.9,11,9,11z
+																 M6.6,4.5h4.9c0-0.7-0.2-1.2-0.7-1.7c-0.5-0.5-1-0.7-1.7-0.7c-0.7,0-1.2,0.2-1.7,0.7S6.6,3.9,6.6,4.5z M3.3,15.9V6.2V15.9z"
+															fill="currentcolor"></path>
+													</svg>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="25px"
+														height="25px" viewBox="0 0 24 24" id="favourite"
+														data-name="Line Color" class="icon line-color"><path id="primary"
+															d="M19.57,5.44a4.91,4.91,0,0,1,0,6.93L12,20,4.43,12.37A4.91,4.91,0,0,1,7.87,4a4.9,4.9,0,0,1,3.44,1.44,4.46,4.46,0,0,1,.69.88,4.46,4.46,0,0,1,.69-.88,4.83,4.83,0,0,1,6.88,0Z"
+															style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;" /></svg>
+												</a>
+											</li>
+
+										</ul>
+									</div>
+									<div class="tab-content-card-desc">
+										<p class="book-author">
+											SHAKESPear
+										</p>
+										<h5 class="book-title">
+											GAMES OF Thronews
+										</h5>
+										<p class="book-price">
+											€ 4.58
+										</p>
+									</div>
+
+								</div>
+								<div class="tab-content-card">
+
+									<div class="tab-content-card-media">
+										<picture>
+											<img src="./images/book3.jpg" alt srcset>
+										</picture>
+										<ul class="product-icons">
+											<li>
+												<a href>
+													<svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px"
+														viewBox="0 0 24 24" fill="none">
+
+														<g clip-path="url(#clip0_105_1836)">
+
+															<path
+																d="M13 3.99976H6C4.89543 3.99976 4 4.89519 4 5.99976V17.9998C4 19.1043 4.89543 19.9998 6 19.9998H13M17 3.99976H18C19.1046 3.99976 20 4.89519 20 5.99976V6.99976M20 16.9998V17.9998C20 19.1043 19.1046 19.9998 18 19.9998H17M20 10.9998V12.9998M12 1.99976V21.9998"
+																stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+																stroke-width="1" />
+
+														</g>
+
+														<defs>
+
+															<clippath id="clip0_105_1836">
+
+																<rect fill="white" height="24"
+																	transform="translate(0 -0.000244141)" width="24" />
+
+															</clippath>
+
+														</defs>
+
+													</svg>
+												</a>
+											</li>
+											<li>
+												<a href>
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														fill="#fff"
+														width="35px"
+														height="35px"
+														viewBox="0 0 1024 1024">
+														<path
+															d="M768 713.7L630.2 575.9c22.3-32.8 35.4-72.4 35.4-115.1 0-113.1-91.7-204.8-204.8-204.8S256 347.7 256 460.8s91.7 204.8 204.8 204.8c42.7 0 82.3-13.1 115.1-35.4L713.7 768l54.3-54.3zM332.8 460.8c0-70.6 57.4-128 128-128s128 57.4 128 128-57.4 128-128 128-128-57.4-128-128z" />
+													</svg>
+												</a>
+											</li>
+											<li>
+												<a href>
+													<svg width="18px" height="18px" xmlns="http://www.w3.org/2000/svg"
+														xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+														viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;"
+														xml:space="preserve">
+														<path
+															d="M3.3,17.5c-0.4,0-0.8-0.2-1.1-0.5c-0.3-0.3-0.5-0.7-0.5-1.1V6.2c0-0.4,0.2-0.8,0.5-1.1c0.3-0.3,0.7-0.5,1.1-0.5H5
+																c0-1.1,0.4-2.1,1.2-2.9S7.9,0.5,9,0.5s2.1,0.4,2.9,1.2S13,3.4,13,4.5h1.6c0.4,0,0.8,0.2,1.1,0.5s0.5,0.7,0.5,1.1v9.7
+																c0,0.4-0.2,0.8-0.5,1.1c-0.3,0.3-0.7,0.5-1.1,0.5H3.3z M3.3,15.9h11.3V6.2H3.3V15.9z M9,11c1.1,0,2.1-0.4,2.9-1.2S13,8.1,13,7h-1.6
+																c0,0.7-0.2,1.2-0.7,1.7c-0.5,0.5-1,0.7-1.7,0.7c-0.7,0-1.2-0.2-1.7-0.7C6.8,8.2,6.6,7.7,6.6,7H5c0,1.1,0.4,2.1,1.2,2.9S7.9,11,9,11z
+																 M6.6,4.5h4.9c0-0.7-0.2-1.2-0.7-1.7c-0.5-0.5-1-0.7-1.7-0.7c-0.7,0-1.2,0.2-1.7,0.7S6.6,3.9,6.6,4.5z M3.3,15.9V6.2V15.9z"
+															fill="currentcolor"></path>
+													</svg>
+												</a>
+											</li>
+											<li>
+												<a href>
+													<svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="25px"
+														height="25px" viewBox="0 0 24 24" id="favourite"
+														data-name="Line Color" class="icon line-color"><path id="primary"
+															d="M19.57,5.44a4.91,4.91,0,0,1,0,6.93L12,20,4.43,12.37A4.91,4.91,0,0,1,7.87,4a4.9,4.9,0,0,1,3.44,1.44,4.46,4.46,0,0,1,.69.88,4.46,4.46,0,0,1,.69-.88,4.83,4.83,0,0,1,6.88,0Z"
+															style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;" /></svg>
+												</a>
+											</li>
+
+										</ul>
+									</div>
+									<div class="tab-content-card-desc">
+										<p class="book-author">
+											SHAKESPear
+										</p>
+										<h5 class="book-title">
+											GAMES OF Thronews
+										</h5>
+										<p class="book-price">
+											€ 4.58
+										</p>
+									</div>
+
+								</div>
+								<div class="tab-content-card">
+
+									<div class="tab-content-card-media">
+										<picture>
+											<img src="./images/book10.jpg" alt srcset>
+										</picture>
+										<ul class="product-icons">
+											<li>
+												<a href>
+													<svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px"
+														viewBox="0 0 24 24" fill="none">
+
+														<g clip-path="url(#clip0_105_1836)">
+
+															<path
+																d="M13 3.99976H6C4.89543 3.99976 4 4.89519 4 5.99976V17.9998C4 19.1043 4.89543 19.9998 6 19.9998H13M17 3.99976H18C19.1046 3.99976 20 4.89519 20 5.99976V6.99976M20 16.9998V17.9998C20 19.1043 19.1046 19.9998 18 19.9998H17M20 10.9998V12.9998M12 1.99976V21.9998"
+																stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+																stroke-width="1" />
+
+														</g>
+
+														<defs>
+
+															<clippath id="clip0_105_1836">
+
+																<rect fill="white" height="24"
+																	transform="translate(0 -0.000244141)" width="24" />
+
+															</clippath>
+
+														</defs>
+
+													</svg>
+												</a>
+											</li>
+											<li>
+												<a href>
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														fill="#fff"
+														width="35px"
+														height="35px"
+														viewBox="0 0 1024 1024">
+														<path
+															d="M768 713.7L630.2 575.9c22.3-32.8 35.4-72.4 35.4-115.1 0-113.1-91.7-204.8-204.8-204.8S256 347.7 256 460.8s91.7 204.8 204.8 204.8c42.7 0 82.3-13.1 115.1-35.4L713.7 768l54.3-54.3zM332.8 460.8c0-70.6 57.4-128 128-128s128 57.4 128 128-57.4 128-128 128-128-57.4-128-128z" />
+													</svg>
+												</a>
+											</li>
+											<li>
+												<a href>
+													<svg width="18px" height="18px" xmlns="http://www.w3.org/2000/svg"
+														xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+														viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;"
+														xml:space="preserve">
+														<path
+															d="M3.3,17.5c-0.4,0-0.8-0.2-1.1-0.5c-0.3-0.3-0.5-0.7-0.5-1.1V6.2c0-0.4,0.2-0.8,0.5-1.1c0.3-0.3,0.7-0.5,1.1-0.5H5
+																c0-1.1,0.4-2.1,1.2-2.9S7.9,0.5,9,0.5s2.1,0.4,2.9,1.2S13,3.4,13,4.5h1.6c0.4,0,0.8,0.2,1.1,0.5s0.5,0.7,0.5,1.1v9.7
+																c0,0.4-0.2,0.8-0.5,1.1c-0.3,0.3-0.7,0.5-1.1,0.5H3.3z M3.3,15.9h11.3V6.2H3.3V15.9z M9,11c1.1,0,2.1-0.4,2.9-1.2S13,8.1,13,7h-1.6
+																c0,0.7-0.2,1.2-0.7,1.7c-0.5,0.5-1,0.7-1.7,0.7c-0.7,0-1.2-0.2-1.7-0.7C6.8,8.2,6.6,7.7,6.6,7H5c0,1.1,0.4,2.1,1.2,2.9S7.9,11,9,11z
+																 M6.6,4.5h4.9c0-0.7-0.2-1.2-0.7-1.7c-0.5-0.5-1-0.7-1.7-0.7c-0.7,0-1.2,0.2-1.7,0.7S6.6,3.9,6.6,4.5z M3.3,15.9V6.2V15.9z"
+															fill="currentcolor"></path>
+													</svg>
+												</a>
+											</li>
+											<li>
+												<a href>
+													<svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="25px"
+														height="25px" viewBox="0 0 24 24" id="favourite"
+														data-name="Line Color" class="icon line-color"><path id="primary"
+															d="M19.57,5.44a4.91,4.91,0,0,1,0,6.93L12,20,4.43,12.37A4.91,4.91,0,0,1,7.87,4a4.9,4.9,0,0,1,3.44,1.44,4.46,4.46,0,0,1,.69.88,4.46,4.46,0,0,1,.69-.88,4.83,4.83,0,0,1,6.88,0Z"
+															style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;" /></svg>
+												</a>
+											</li>
+
+										</ul>
+									</div>
+									<div class="tab-content-card-desc">
+										<p class="book-author">
+											SHAKESPear
+										</p>
+										<h5 class="book-title">
+											GAMES OF Thronews
+										</h5>
+										<p class="book-price">
+											€ 4.58
+										</p>
+									</div>
+
+								</div>
+								<div class="tab-content-card">
+
+									<div class="tab-content-card-media">
+										<picture>
+											<img src="./images/book12.webp" alt srcset>
+										</picture>
+										<ul class="product-icons">
+											<li>
+												<a href>
+													<svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px"
+														viewBox="0 0 24 24" fill="none">
+
+														<g clip-path="url(#clip0_105_1836)">
+
+															<path
+																d="M13 3.99976H6C4.89543 3.99976 4 4.89519 4 5.99976V17.9998C4 19.1043 4.89543 19.9998 6 19.9998H13M17 3.99976H18C19.1046 3.99976 20 4.89519 20 5.99976V6.99976M20 16.9998V17.9998C20 19.1043 19.1046 19.9998 18 19.9998H17M20 10.9998V12.9998M12 1.99976V21.9998"
+																stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+																stroke-width="1" />
+
+														</g>
+
+														<defs>
+
+															<clippath id="clip0_105_1836">
+
+																<rect fill="white" height="24"
+																	transform="translate(0 -0.000244141)" width="24" />
+
+															</clippath>
+
+														</defs>
+
+													</svg>
+												</a>
+											</li>
+											<li>
+												<a href>
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														fill="#fff"
+														width="30px"
+														height="30px"
+														viewBox="0 0 1024 1024">
+														<path
+															d="M768 713.7L630.2 575.9c22.3-32.8 35.4-72.4 35.4-115.1 0-113.1-91.7-204.8-204.8-204.8S256 347.7 256 460.8s91.7 204.8 204.8 204.8c42.7 0 82.3-13.1 115.1-35.4L713.7 768l54.3-54.3zM332.8 460.8c0-70.6 57.4-128 128-128s128 57.4 128 128-57.4 128-128 128-128-57.4-128-128z" />
+													</svg>
+												</a>
+											</li>
+											<li>
+												<a href>
+													<svg width="18px" height="18px" xmlns="http://www.w3.org/2000/svg"
+														xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+														viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;"
+														xml:space="preserve">
+														<path
+															d="M3.3,17.5c-0.4,0-0.8-0.2-1.1-0.5c-0.3-0.3-0.5-0.7-0.5-1.1V6.2c0-0.4,0.2-0.8,0.5-1.1c0.3-0.3,0.7-0.5,1.1-0.5H5
+																c0-1.1,0.4-2.1,1.2-2.9S7.9,0.5,9,0.5s2.1,0.4,2.9,1.2S13,3.4,13,4.5h1.6c0.4,0,0.8,0.2,1.1,0.5s0.5,0.7,0.5,1.1v9.7
+																c0,0.4-0.2,0.8-0.5,1.1c-0.3,0.3-0.7,0.5-1.1,0.5H3.3z M3.3,15.9h11.3V6.2H3.3V15.9z M9,11c1.1,0,2.1-0.4,2.9-1.2S13,8.1,13,7h-1.6
+																c0,0.7-0.2,1.2-0.7,1.7c-0.5,0.5-1,0.7-1.7,0.7c-0.7,0-1.2-0.2-1.7-0.7C6.8,8.2,6.6,7.7,6.6,7H5c0,1.1,0.4,2.1,1.2,2.9S7.9,11,9,11z
+																 M6.6,4.5h4.9c0-0.7-0.2-1.2-0.7-1.7c-0.5-0.5-1-0.7-1.7-0.7c-0.7,0-1.2,0.2-1.7,0.7S6.6,3.9,6.6,4.5z M3.3,15.9V6.2V15.9z"
+															fill="currentcolor"></path>
+													</svg>
+												</a>
+											</li>
+											<li>
+												<a href>
+													<svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="25px"
+														height="25px" viewBox="0 0 24 24" id="favourite"
+														data-name="Line Color" class="icon line-color"><path id="primary"
+															d="M19.57,5.44a4.91,4.91,0,0,1,0,6.93L12,20,4.43,12.37A4.91,4.91,0,0,1,7.87,4a4.9,4.9,0,0,1,3.44,1.44,4.46,4.46,0,0,1,.69.88,4.46,4.46,0,0,1,.69-.88,4.83,4.83,0,0,1,6.88,0Z"
+															style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;" /></svg>
+												</a>
+											</li>
+
+										</ul>
+									</div>
+									<div class="tab-content-card-desc">
+										<p class="book-author">
+											SHAKESPear
+										</p>
+										<h5 class="book-title">
+											GAMES OF Thronews
+										</h5>
+										<p class="book-price">
+											€ 4.58
+										</p>
+									</div>
+
+								</div>
+								<div class="tab-content-card">
+
+									<div class="tab-content-card-media">
+										<picture>
+											<img src="./images/book13.webp" alt srcset>
+										</picture>
+										<ul class="product-icons">
+											<li>
+												<a href>
+													<svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px"
+														viewBox="0 0 24 24" fill="none">
+
+														<g clip-path="url(#clip0_105_1836)">
+
+															<path
+																d="M13 3.99976H6C4.89543 3.99976 4 4.89519 4 5.99976V17.9998C4 19.1043 4.89543 19.9998 6 19.9998H13M17 3.99976H18C19.1046 3.99976 20 4.89519 20 5.99976V6.99976M20 16.9998V17.9998C20 19.1043 19.1046 19.9998 18 19.9998H17M20 10.9998V12.9998M12 1.99976V21.9998"
+																stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+																stroke-width="1" />
+
+														</g>
+
+														<defs>
+
+															<clippath id="clip0_105_1836">
+
+																<rect fill="white" height="24"
+																	transform="translate(0 -0.000244141)" width="24" />
+
+															</clippath>
+
+														</defs>
+
+													</svg>
+												</a>
+											</li>
+											<li>
+												<a href>
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														fill="#fff"
+														width="30px"
+														height="30px"
+														viewBox="0 0 1024 1024">
+														<path
+															d="M768 713.7L630.2 575.9c22.3-32.8 35.4-72.4 35.4-115.1 0-113.1-91.7-204.8-204.8-204.8S256 347.7 256 460.8s91.7 204.8 204.8 204.8c42.7 0 82.3-13.1 115.1-35.4L713.7 768l54.3-54.3zM332.8 460.8c0-70.6 57.4-128 128-128s128 57.4 128 128-57.4 128-128 128-128-57.4-128-128z" />
+													</svg>
+												</a>
+											</li>
+											<li>
+												<a href>
+													<svg width="18px" height="18px" xmlns="http://www.w3.org/2000/svg"
+														xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+														viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;"
+														xml:space="preserve">
+														<path
+															d="M3.3,17.5c-0.4,0-0.8-0.2-1.1-0.5c-0.3-0.3-0.5-0.7-0.5-1.1V6.2c0-0.4,0.2-0.8,0.5-1.1c0.3-0.3,0.7-0.5,1.1-0.5H5
+																c0-1.1,0.4-2.1,1.2-2.9S7.9,0.5,9,0.5s2.1,0.4,2.9,1.2S13,3.4,13,4.5h1.6c0.4,0,0.8,0.2,1.1,0.5s0.5,0.7,0.5,1.1v9.7
+																c0,0.4-0.2,0.8-0.5,1.1c-0.3,0.3-0.7,0.5-1.1,0.5H3.3z M3.3,15.9h11.3V6.2H3.3V15.9z M9,11c1.1,0,2.1-0.4,2.9-1.2S13,8.1,13,7h-1.6
+																c0,0.7-0.2,1.2-0.7,1.7c-0.5,0.5-1,0.7-1.7,0.7c-0.7,0-1.2-0.2-1.7-0.7C6.8,8.2,6.6,7.7,6.6,7H5c0,1.1,0.4,2.1,1.2,2.9S7.9,11,9,11z
+																 M6.6,4.5h4.9c0-0.7-0.2-1.2-0.7-1.7c-0.5-0.5-1-0.7-1.7-0.7c-0.7,0-1.2,0.2-1.7,0.7S6.6,3.9,6.6,4.5z M3.3,15.9V6.2V15.9z"
+															fill="currentcolor"></path>
+													</svg>
+												</a>
+											</li>
+											<li>
+												<a href>
+													<svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="25px"
+														height="25px" viewBox="0 0 24 24" id="favourite"
+														data-name="Line Color" class="icon line-color"><path id="primary"
+															d="M19.57,5.44a4.91,4.91,0,0,1,0,6.93L12,20,4.43,12.37A4.91,4.91,0,0,1,7.87,4a4.9,4.9,0,0,1,3.44,1.44,4.46,4.46,0,0,1,.69.88,4.46,4.46,0,0,1,.69-.88,4.83,4.83,0,0,1,6.88,0Z"
+															style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;" /></svg>
+												</a>
+											</li>
+
+										</ul>
+									</div>
+									<div class="tab-content-card-desc">
+										<p class="book-author">
+											SHAKESPear
+										</p>
+										<h5 class="book-title">
+											GAMES OF Thronews
+										</h5>
+										<p class="book-price">
+											€ 4.58
+										</p>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="fixed-bg">
+				<div class="p-one parallax-inner">
+					<div class="inner-parallel-contents">
+						<h2>BOOK FESTIVAL IS LIVE NOW</h2>
+						<p>ALL BOOKS DISCOUNT UPTO 50%</p>
+						<div class="btn-wrap">
+							<div class="btns">
+								<a href="\" class="button__primary">SHOP NOW</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<!-- TESTIMONIAL -->
+			<section class="testimonial">
+				<div class="container-row">
+					<div class="main-heading">
+						<h2 class="heading-title heading-line">NEW ARRiVALS</h2>
+					</div>
+					<div class="testimonial-main-wrapper">
+						<div class="testimonials">
+							<div class="testimonial-block">
+								<img
+									src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkSflTI9DIJAstZ8fesrSz70HR8oH9BN_d8w0cjGEtiZyqDcs8">
+								<svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="50px"
+									height="50px" viewBox="0 0 24 24"><path
+										d="M6.5 10c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35l.539-.222.474-.197-.485-1.938-.597.144c-.191.048-.424.104-.689.171-.271.05-.56.187-.882.312-.318.142-.686.238-1.028.466-.344.218-.741.4-1.091.692-.339.301-.748.562-1.05.945-.33.358-.656.734-.909 1.162-.293.408-.492.856-.702 1.299-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539l.025.168.026-.006A4.5 4.5 0 1 0 6.5 10zm11 0c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35l.539-.222.474-.197-.485-1.938-.597.144c-.191.048-.424.104-.689.171-.271.05-.56.187-.882.312-.317.143-.686.238-1.028.467-.344.218-.741.4-1.091.692-.339.301-.748.562-1.05.944-.33.358-.656.734-.909 1.162-.293.408-.492.856-.702 1.299-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539l.025.168.026-.006A4.5 4.5 0 1 0 17.5 10z" /></svg>
+								<p>
+									Editors now use Lorem Ipsum as their default model text, and a search
+									for 'lorem ipsum' will uncover many web sites still in their infancy.
+									Various versions have evolved over the years, sometimes by
+								</p>
+							</div>
+							<div class="testimonial-block">
+								<img
+									src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkSflTI9DIJAstZ8fesrSz70HR8oH9BN_d8w0cjGEtiZyqDcs8">
+								<svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="50px"
+									height="50px" viewBox="0 0 24 24"><path
+										d="M6.5 10c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35l.539-.222.474-.197-.485-1.938-.597.144c-.191.048-.424.104-.689.171-.271.05-.56.187-.882.312-.318.142-.686.238-1.028.466-.344.218-.741.4-1.091.692-.339.301-.748.562-1.05.945-.33.358-.656.734-.909 1.162-.293.408-.492.856-.702 1.299-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539l.025.168.026-.006A4.5 4.5 0 1 0 6.5 10zm11 0c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35l.539-.222.474-.197-.485-1.938-.597.144c-.191.048-.424.104-.689.171-.271.05-.56.187-.882.312-.317.143-.686.238-1.028.467-.344.218-.741.4-1.091.692-.339.301-.748.562-1.05.944-.33.358-.656.734-.909 1.162-.293.408-.492.856-.702 1.299-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539l.025.168.026-.006A4.5 4.5 0 1 0 17.5 10z" /></svg>
+								<p>
+									Editors now use Lorem Ipsum as their default model text, and a search
+									for 'lorem ipsum' will uncover many web sites still in their infancy.
+									Various versions have evolved over the years, sometimes by
+								</p>
+							</div>
+							<div class="testimonial-block">
+								<img
+									src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkSflTI9DIJAstZ8fesrSz70HR8oH9BN_d8w0cjGEtiZyqDcs8">
+								<svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="50px"
+									height="50px" viewBox="0 0 24 24"><path
+										d="M6.5 10c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35l.539-.222.474-.197-.485-1.938-.597.144c-.191.048-.424.104-.689.171-.271.05-.56.187-.882.312-.318.142-.686.238-1.028.466-.344.218-.741.4-1.091.692-.339.301-.748.562-1.05.945-.33.358-.656.734-.909 1.162-.293.408-.492.856-.702 1.299-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539l.025.168.026-.006A4.5 4.5 0 1 0 6.5 10zm11 0c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35l.539-.222.474-.197-.485-1.938-.597.144c-.191.048-.424.104-.689.171-.271.05-.56.187-.882.312-.317.143-.686.238-1.028.467-.344.218-.741.4-1.091.692-.339.301-.748.562-1.05.944-.33.358-.656.734-.909 1.162-.293.408-.492.856-.702 1.299-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539l.025.168.026-.006A4.5 4.5 0 1 0 17.5 10z" /></svg>
+								<p>
+									Editors now use Lorem Ipsum as their default model text, and a search
+									for 'lorem ipsum' will uncover many web sites still in their infancy.
+									Various versions have evolved over the years, sometimes by </p>
+							</div>
+							<div class="testimonial-block">
+								<img
+									src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkSflTI9DIJAstZ8fesrSz70HR8oH9BN_d8w0cjGEtiZyqDcs8">
+								<svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="50px"
+									height="50px" viewBox="0 0 24 24"><path
+										d="M6.5 10c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35l.539-.222.474-.197-.485-1.938-.597.144c-.191.048-.424.104-.689.171-.271.05-.56.187-.882.312-.318.142-.686.238-1.028.466-.344.218-.741.4-1.091.692-.339.301-.748.562-1.05.945-.33.358-.656.734-.909 1.162-.293.408-.492.856-.702 1.299-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539l.025.168.026-.006A4.5 4.5 0 1 0 6.5 10zm11 0c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35l.539-.222.474-.197-.485-1.938-.597.144c-.191.048-.424.104-.689.171-.271.05-.56.187-.882.312-.317.143-.686.238-1.028.467-.344.218-.741.4-1.091.692-.339.301-.748.562-1.05.944-.33.358-.656.734-.909 1.162-.293.408-.492.856-.702 1.299-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539l.025.168.026-.006A4.5 4.5 0 1 0 17.5 10z" /></svg>
+								<p>
+									Editors now use Lorem Ipsum as their default model text, and a search
+									for 'lorem ipsum' will uncover many web sites still in their infancy.
+									Various versions have evolved over the years, sometimes by
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="fixed-bg">
+				<div class="p-one parallax-inner" style="
+				background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+				url(&quot;./images/fixed-4.jpg&quot;);">
+					<div class="inner-parallel-contents">
+						<h2>TALK OF THE TOWN</h2>
+						<p>EXPLORE AND SHOP THE LATEST TRENDING BOOKS...!!!!</p>
+						<div class="btn-wrap">
+							<div class="btns">
+								<a href="\" class="button__primary">EXPLORE NOW</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<!-- latest news -->
+			<section class="latest-news">
+				<div class="container-row">
+					<div class="main-heading">
+						<h2 class="heading-title heading-line">LATEST NEWS</h2>
+					</div>
+
+					<div class="three-col-gallery">
+						<div class="three-gallery-col">
+							<div class="three-gallery-wrapp">
+								<div class="three-gallery-img">
+									<img src="./images/news1.webp" alt>
+								</div>
+								<div class="three-gallery-content">
+									<div class="new-heading">
+										<h5 class="hover-heading">Trial of Salman Rushdie attacker may be
+											delayed by author's memoir release</h5>
+									</div>
+									<div class="hidden-content">
+										<div class="date-time">
+											<p>
+												<svg version="1.1" x="0px" y="0px" viewBox="0 0 300.988 300.988"
+													style="enable-background:new 0 0 300.988 300.988;"
+													xml:space="preserve"><path
+														d="M150.494,0.001C67.511,0.001,0,67.512,0,150.495s67.511,150.493,150.494,150.493s150.494-67.511,150.494-150.493S233.476,0.001,150.494,0.001z M150.494,285.987C75.782,285.987,15,225.206,15,150.495S75.782,15.001,150.494,15.001s135.494,60.782,135.494,135.493S225.205,285.987,150.494,285.987z"></path><polygon
+														points="142.994,142.995 83.148,142.995 83.148,157.995 157.994,157.995 157.994,43.883 142.994,43.883 		"></polygon></svg>
+												10:00 - 10:30
+											</p>
+											<p>
+												<svg version="1.1" x="0px" y="0px" viewBox="0 0 492.308 492.308"
+													style="enable-background:new 0 0 492.308 492.308;"
+													xml:space="preserve"><path
+														d="M426.567,46.212V28.923C426.567,12.971,413.591,0,397.639,0c-15.947,0-28.923,12.971-28.923,28.923v17.288H123.591V28.923C123.591,12.971,110.615,0,94.668,0C78.721,0,65.745,12.971,65.745,28.923v17.288H0v446.096h492.308V46.212H426.567zM388.409,28.923c0-5.087,4.144-9.231,9.236-9.231c5.091,0,9.231,4.144,9.231,9.231v43.596h-18.466V28.923z M85.437,28.923c0-5.087,4.139-9.231,9.231-9.231c5.091,0,9.231,4.144,9.231,9.231v43.596H85.437V28.923z M472.615,472.615H19.692V173.404h452.923V472.615z M472.615,153.712H19.692V65.904h46.053v26.308h57.846V65.904h245.125v26.308h57.851V65.904h46.048V153.712z"></path></svg>
+												Monday 01 July 2024
+											</p>
+										</div>
+										<h5 class="hover-heading">Trial of Salman Rushdie attacker may be
+											delayed by author's memoir release</h5>
+										<p>The man charged with repeatedly stabbing Rushdie is reportedly
+											entitled to the manuscript of the author's new memoir, “Knife:
+											Meditations After an Attempted Murder,” as part of his trial
+											preparation.</p>
+										<div class="btn-wrap">
+											<div class="btns">
+												<a href="/"
+													class="button__primary white">READ
+													MORE
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="three-gallery-col">
+							<div class="three-gallery-wrapp">
+								<div class="three-gallery-img">
+									<img src="./images/news2.webp" alt>
+								</div>
+								<div class="three-gallery-content">
+									<div class="new-heading">
+										<h5 class="hover-heading">Euronews Culture’s 2024 books preview: What
+											we’ll be reading next year</h5>
+									</div>
+									<div class="hidden-content">
+										<div class="date-time">
+											<p>
+												<svg version="1.1" x="0px" y="0px" viewBox="0 0 300.988 300.988"
+													style="enable-background:new 0 0 300.988 300.988;"
+													xml:space="preserve"><path
+														d="M150.494,0.001C67.511,0.001,0,67.512,0,150.495s67.511,150.493,150.494,150.493s150.494-67.511,150.494-150.493S233.476,0.001,150.494,0.001z M150.494,285.987C75.782,285.987,15,225.206,15,150.495S75.782,15.001,150.494,15.001s135.494,60.782,135.494,135.493S225.205,285.987,150.494,285.987z"></path><polygon
+														points="142.994,142.995 83.148,142.995 83.148,157.995 157.994,157.995 157.994,43.883 142.994,43.883 		"></polygon></svg>
+												10:00 - 10:30
+											</p>
+											<p>
+												<svg version="1.1" x="0px" y="0px" viewBox="0 0 492.308 492.308"
+													style="enable-background:new 0 0 492.308 492.308;"
+													xml:space="preserve"><path
+														d="M426.567,46.212V28.923C426.567,12.971,413.591,0,397.639,0c-15.947,0-28.923,12.971-28.923,28.923v17.288H123.591V28.923C123.591,12.971,110.615,0,94.668,0C78.721,0,65.745,12.971,65.745,28.923v17.288H0v446.096h492.308V46.212H426.567zM388.409,28.923c0-5.087,4.144-9.231,9.236-9.231c5.091,0,9.231,4.144,9.231,9.231v43.596h-18.466V28.923z M85.437,28.923c0-5.087,4.139-9.231,9.231-9.231c5.091,0,9.231,4.144,9.231,9.231v43.596H85.437V28.923z M472.615,472.615H19.692V173.404h452.923V472.615z M472.615,153.712H19.692V65.904h46.053v26.308h57.846V65.904h245.125v26.308h57.851V65.904h46.048V153.712z"></path></svg>
+												Monday 01 July 2024
+											</p>
+										</div>
+										<h5 class="hover-heading">Euronews Culture’s 2024 books preview: What
+											we’ll be reading next year</h5>
+										<p>From campy horror to heritage cookbooks to a birdwatching guide by
+											a beloved fiction writer, here’s what we’re most looking forward to
+											reading next year.</p>
+										<div class="btn-wrap">
+											<div class="btns">
+												<a href="/"
+													class="button__primary white">READ
+													MORE
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div> <div class="three-gallery-col">
+							<div class="three-gallery-wrapp">
+								<div class="three-gallery-img">
+									<img src="./images/news4.webp" alt>
+								</div>
+								<div class="three-gallery-content">
+									<div class="new-heading">
+										<h5 class="hover-heading">Author Edmund de Waal to chair 2024 judging
+											panel</h5>
+									</div>
+									<div class="hidden-content">
+										<div class="date-time">
+											<p>
+												<svg version="1.1" x="0px" y="0px" viewBox="0 0 300.988 300.988"
+													style="enable-background:new 0 0 300.988 300.988;"
+													xml:space="preserve"><path
+														d="M150.494,0.001C67.511,0.001,0,67.512,0,150.495s67.511,150.493,150.494,150.493s150.494-67.511,150.494-150.493S233.476,0.001,150.494,0.001z M150.494,285.987C75.782,285.987,15,225.206,15,150.495S75.782,15.001,150.494,15.001s135.494,60.782,135.494,135.493S225.205,285.987,150.494,285.987z"></path><polygon
+														points="142.994,142.995 83.148,142.995 83.148,157.995 157.994,157.995 157.994,43.883 142.994,43.883 		"></polygon></svg>
+												10:00 - 10:30
+											</p>
+											<p>
+												<svg version="1.1" x="0px" y="0px" viewBox="0 0 492.308 492.308"
+													style="enable-background:new 0 0 492.308 492.308;"
+													xml:space="preserve"><path
+														d="M426.567,46.212V28.923C426.567,12.971,413.591,0,397.639,0c-15.947,0-28.923,12.971-28.923,28.923v17.288H123.591V28.923C123.591,12.971,110.615,0,94.668,0C78.721,0,65.745,12.971,65.745,28.923v17.288H0v446.096h492.308V46.212H426.567zM388.409,28.923c0-5.087,4.144-9.231,9.236-9.231c5.091,0,9.231,4.144,9.231,9.231v43.596h-18.466V28.923z M85.437,28.923c0-5.087,4.139-9.231,9.231-9.231c5.091,0,9.231,4.144,9.231,9.231v43.596H85.437V28.923z M472.615,472.615H19.692V173.404h452.923V472.615z M472.615,153.712H19.692V65.904h46.053v26.308h57.846V65.904h245.125v26.308h57.851V65.904h46.048V153.712z"></path></svg>
+												Monday 01 July 2024
+											</p>
+										</div>
+										<h5 class="hover-heading">Author Edmund de Waal to chair 2024 judging
+											panel</h5>
+										<p>As submissions open for next year's Booker Prize, the 2024 judging
+											panel for the leading literary award in the English-speaking world
+											has been announced.
+
+											The judges for next year's Booker Prize have been announced as the
+											prestigious literary awards also open up for submissions from
+											publishers. </p>
+										<div class="btn-wrap">
+											<div class="btns">
+												<a href="/"
+													class="button__primary white">READ
+													MORE
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div> <div class="three-gallery-col">
+							<div class="three-gallery-wrapp">
+								<div class="three-gallery-img">
+									<img src="./images/news5.webp" alt>
+								</div>
+								<div class="three-gallery-content">
+									<div class="new-heading">
+										<h5 class="hover-heading">Former film director Jean-Baptiste Andrea
+											wins Goncourt Prize, France's top literary award</h5>
+									</div>
+									<div class="hidden-content">
+										<div class="date-time">
+											<p>
+												<svg version="1.1" x="0px" y="0px" viewBox="0 0 300.988 300.988"
+													style="enable-background:new 0 0 300.988 300.988;"
+													xml:space="preserve"><path
+														d="M150.494,0.001C67.511,0.001,0,67.512,0,150.495s67.511,150.493,150.494,150.493s150.494-67.511,150.494-150.493S233.476,0.001,150.494,0.001z M150.494,285.987C75.782,285.987,15,225.206,15,150.495S75.782,15.001,150.494,15.001s135.494,60.782,135.494,135.493S225.205,285.987,150.494,285.987z"></path><polygon
+														points="142.994,142.995 83.148,142.995 83.148,157.995 157.994,157.995 157.994,43.883 142.994,43.883 		"></polygon></svg>
+												10:00 - 10:30
+											</p>
+											<p>
+												<svg version="1.1" x="0px" y="0px" viewBox="0 0 492.308 492.308"
+													style="enable-background:new 0 0 492.308 492.308;"
+													xml:space="preserve"><path
+														d="M426.567,46.212V28.923C426.567,12.971,413.591,0,397.639,0c-15.947,0-28.923,12.971-28.923,28.923v17.288H123.591V28.923C123.591,12.971,110.615,0,94.668,0C78.721,0,65.745,12.971,65.745,28.923v17.288H0v446.096h492.308V46.212H426.567zM388.409,28.923c0-5.087,4.144-9.231,9.236-9.231c5.091,0,9.231,4.144,9.231,9.231v43.596h-18.466V28.923z M85.437,28.923c0-5.087,4.139-9.231,9.231-9.231c5.091,0,9.231,4.144,9.231,9.231v43.596H85.437V28.923z M472.615,472.615H19.692V173.404h452.923V472.615z M472.615,153.712H19.692V65.904h46.053v26.308h57.846V65.904h245.125v26.308h57.851V65.904h46.048V153.712z"></path></svg>
+												Monday 01 July 2024
+											</p>
+										</div>
+										<h5 class="hover-heading">Former film director Jean-Baptiste Andrea
+											wins Goncourt Prize, France's top literary award</h5>
+										<p>Jean-Baptiste Andrea joins an illustrious list of Goncourt Prize
+											winners including Michel Houellebecq, Marcel Proust, and Simone de
+											Beauvoir</p>
+
+										<p>Film director Jean-Baptiste Andrea has won France’s most
+											prestigious literary award, the Goncourt Prize.</p>
+										<div class="btn-wrap">
+											<div class="btns">
+												<a href="/"
+													class="button__primary white">READ
+													MORE
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- SUBSCRIPTION -->
+			<section class="subscription">
+				<div class="container-row">
+					<div class="subscribe__wrapper">
+						<div class="subscribe-text">
+							<h2>
+								SUBSCRIBE TO OUR NEWS LETTER
+							</h2>
+							<p>
+								Enter your email address to receive regular updates, as well as news on
+								upcoming events and specific offers.
+							</p>
+						</div>
+						<div class="subscribe-form">
+							<form class="form">
+								<input type="email" class="form__field"
+									placeholder="Your E-Mail Address" />
+								<button type="button"
+									class="btn btn--primary btn--inside uppercase">Send</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer footer-bg">
+			<div class="container-row">
+				<div class="footer-row">
+					<div class="footer-col">
+						<h4>EXHIBITION OPENING TIMES</h4>
+						<h5>Monday 1 July, 9:00-18:00</h5>
+						<h5>Tuesday 2 July, 9:00-18:00</h5>
+						<h5>Wednesday 3 July, 9:00-14:00</h5> </div>
+					<div class="footer-col">
+						<h4>QUICK LINKS</h4>
+						<h5><a href="/" title="Home">Home</a></h5>
+						<h5><a href=""
+								title="">About Us</a></h5>
+						<h5><a href=""
+								title="">Exhibition</a></h5>
+						<h5><a href="" title="">Sponsorship book</a></h5>
+					</div>
+					<div class="footer-col footer-col-last">
+						<h4>CONTACT US</h4>
+						<div class="footer-inner-col">
+							<h5>
+								Sponsorship &amp; Exhibition Opportunities <a
+									href="">sales@bookery.com</a>
+							</h5>
+							<h5>
+								Speaking Enquiry <a
+									href="">conference@bookery.com</a>
+							</h5>
+							<h5>
+								Delegate Enquiry <a
+									href="">info@bookery.com</a>
+							</h5>
+							<h5>
+								Marketing &amp; PR Enquiries <a
+									href="">marketing@bookery.com</a>
+							</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+		integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="main.js"></script>
+	</body>
+</html>
