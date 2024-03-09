@@ -120,7 +120,7 @@ header .header-main .hamburger-menu .hamburger-menu-design-icon.open span:nth-ch
         z-index: 5;
         transition: .5s ease-in-out;
     }
-    .header-nav.open ul.navbar li {
+    .header-nav ul.navbar li {
         padding: 10px;
         border-bottom: 1px solid hsla(0, 4%, 84%, .21);
     }
@@ -128,7 +128,7 @@ header .header-main .hamburger-menu .hamburger-menu-design-icon.open span:nth-ch
         width: 100%;
         display: block;
     }
-    .header-nav.open ul.navbar {
+    .header-nav ul.navbar {
         display: block;
         margin: 40px 0;
         padding: 30px 0px;

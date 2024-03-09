@@ -622,6 +622,151 @@ form.search_form svg {
 form.search_form svg:hover {
   transform: scale(1.3);
 }
+
+
+header .header-main .hamburger-menu {
+  display: none;
+  width: 10%
+}
+
+@media (max-width: 1024px) {
+  header .header-main .hamburger-menu {
+      display:block;
+      position: absolute
+  }
+}
+
+header .header-main .hamburger-menu .hamburger-menu-design {
+  background-color: #e8eb34;
+  border-radius: 50%;
+  height: 11rem;
+  position: fixed;
+  right: -48px;
+  top: 61px;
+  -webkit-transform: translate(25%,-90%);
+  -ms-transform: translate(25%,-90%);
+  transform: translate(25%,-90%);
+  width: 11rem;
+  z-index: 1;
+  z-index: 8
+}
+
+@media (max-width: 599px) {
+  header .header-main .hamburger-menu .hamburger-menu-design {
+      right:-118px;
+      top: -11px;
+      -webkit-transform: translate(-15%,-51%);
+      -ms-transform: translate(-15%,-51%);
+      transform: translate(-15%,-51%)
+  }
+}
+
+header .header-main .hamburger-menu  .hamburger-menu-design-icon {
+  bottom: -14px;
+  height: 100%;
+  left: -6px;
+  position: absolute;
+  width: 100%
+}
+
+@media (max-width: 767px) {
+  header .header-main .hamburger-menu  .hamburger-menu-design-icon {
+      left:-16px
+  }
+}
+
+@media (max-width: 599px) {
+  header .header-main .hamburger-menu .hamburger-menu-design-icon {
+      bottom:-16px;
+      left: -18px
+  }
+}
+
+header .header-main .hamburger-menu .hamburger-menu-design-icon span {
+  background-color: #000;
+  border-radius: 9px;
+  bottom: 53px;
+  display: block;
+  height: 3px;
+  left: 61px;
+  position: absolute;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+  width: 26px
+}
+
+header .header-main .hamburger-menu .hamburger-menu-design-icon span:nth-child(2) {
+  bottom: 63px
+}
+
+header .header-main .hamburger-menu .hamburger-menu-design-icon span:nth-child(3) {
+  bottom: 73px
+}
+
+header .header-main .hamburger-menu .hamburger-menu-design-icon.open span:first-child {
+  bottom: 63px;
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg)
+}
+
+header .header-main .hamburger-menu .hamburger-menu-design-icon.open span:nth-child(2) {
+  opacity: 0
+}
+
+header .header-main .hamburger-menu .hamburger-menu-design-icon.open span:nth-child(3) {
+  bottom: 63px;
+  -webkit-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  transform: rotate(-135deg)
+}
+
+.header-nav.open {
+  overflow: scroll;
+  -webkit-transform: translate(0);
+  -ms-transform: translate(0);
+  transform: translate(0);
+  transition: .5s ease-in-out;
+}
+@media (max-width: 1024px) {
+  .header-nav{
+      height:100%;
+      padding: 20px 0;
+      position: fixed;
+      right: 0;
+      top: 0;
+      -webkit-transform: translate(1000px);
+      -ms-transform: translate(1000px);
+      transform: translate(1000px);
+      width: 40%;
+      z-index: 5;
+      transition: .5s ease-in-out;
+  }
+  .header-nav ul.navbar li {
+      padding: 10px;
+      border-bottom: 1px solid hsla(0, 4%, 84%, .21);
+  }
+  .header-nav-wrapper {
+      width: 100%;
+      display: block;
+  }
+  .header-nav ul.navbar {
+      display: block;
+      margin: 40px 0;
+      padding: 30px 0px;
+  }
+}
+
+
+
+.o-hidden {
+  overflow: hidden;
+  position: relative;
+}
 /* ******************************BANNER STYLES******************************************************** */
 main {
   height: auto;
@@ -737,7 +882,7 @@ main {
 .heading-line:after {
   content: "";
   position: absolute;
-  width: 7rem;
+  width: 80%;
   height: 5px;
   background: var(--clr-primary);
   left: 0;
@@ -1446,28 +1591,87 @@ section.subscription {
   text-align: center;
 }
 
-.customer-login-block {
+.customer-account-block {
   max-width: 700px;
   margin: 0 auto;
   background: white;
   padding: 40px;
 }
 
-.customer-login-main-form input {
+.customer-account-main-form input {
   padding: 10px;
   width: 100%;
   margin-bottom: 30px;
 }
 
-.customer-login-main-form {
-  margin: 30px 0;
+.customer-account-main-form {
+  margin: 30px 0 0px;
+  text-align: center;
 }
-.customer-login-main-form button[type="submit"] {
+.customer-account-main-form button[type="submit"] {
   background: var(--clr-primary);
   padding: 10px 20px;
   color: var(--clr-white);
 }
 
-.customer-login-main-form button:hover {
+.customer-account-main-form button:hover {
   background: black;
+}
+.customer-account-main-form form {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #d4cccc;
+}
+
+.reset-password {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 0px;
+}
+
+.reset-password p a {
+    color: #000;
+    font-size: 16px;
+}
+
+/* ********************************************************************* */
+.filter-attribute-list {
+	overflow: hidden;
+	list-style: none;
+	margin-top: 0;
+	padding: 0px 20px;
+}
+
+.filter-attribute-list-inner {
+	padding: 0 10px 15px;
+}
+
+.filter-attribute-item {
+	padding: 10px 0;
+	border-bottom: 1px solid #d5d2d2;
+}
+.product-main-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    padding: 10px 15px;
+}
+
+.filter-attribute-item input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+}
+
+.filter-attribute-item label {
+    margin-left: 5px;
+}
+.filter-acco-header {
+    cursor: pointer;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filter-acco-header h3 {
+    margin: 0;
 }
