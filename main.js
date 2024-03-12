@@ -9,7 +9,10 @@
   
 // });
 
-
+$('.filter-accordion .filter-acco-header').click(function() {
+  $(this).toggleClass('active').next('.filter-acco-content').slideToggle();
+  $('.filter-acco-header').not(this).removeClass('active').next('.filter-acco-content').slideUp();
+});
 
 const hampMenu = document.querySelector(".hamburger-menu-design-icon");
 const navbar = document.querySelector(".header-nav");

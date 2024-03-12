@@ -1638,11 +1638,11 @@ section.subscription {
 	overflow: hidden;
 	list-style: none;
 	margin-top: 0;
-	padding: 0px 20px;
+	padding: 0px 5px;
 }
 
 .filter-attribute-list-inner {
-	padding: 0 10px 15px;
+	padding: 0 10px;
 }
 
 .filter-attribute-item {
@@ -1652,7 +1652,8 @@ section.subscription {
 .product-main-wrapper {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    padding: 10px 15px;
+    padding: 40px 15px 0;
+    gap: 25px;
 }
 
 .filter-attribute-item input[type="checkbox"] {
@@ -1674,4 +1675,12 @@ section.subscription {
 
 .filter-acco-header h3 {
     margin: 0;
+    font-size: 20px;
+    color: var(--clr-primary);
+}
+.product-side-main {
+    padding: 0px 20px;
+}
+.filter-acco-content {
+    background: #c31e4914;
 }
