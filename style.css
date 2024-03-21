@@ -649,9 +649,9 @@ header .header-main .hamburger-menu .hamburger-menu-design {
   justify-content: center;
 }
 .header-main .hamburger-menu .hamburger-menu-design-icon {
-  bottom: -14px;
+  bottom: -16px;
   height: 100%;
-  left: -6px;
+  left: -17px;
   position: absolute;
   width: 100%;
 }
@@ -773,11 +773,15 @@ main {
 .banner-heading * {
   color: var(--clr-white);
 }
+
 .btn-wrap {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 0 30px;
+}
+.btn-wrap.center{
+  justify-content: center;
 }
 .btn-wrap .button__primary {
   background-image: linear-gradient(
@@ -1111,7 +1115,7 @@ p {
   background-color: var(--clr-primary);
   color: var(--clr-white);
 }
-.testimonial-block svg {
+.testimonial-block svg,.testimonials .testimonial-block .quote {
   position: absolute;
   content: "";
   top: 13px;
@@ -1515,7 +1519,7 @@ section.subscription {
   margin: 20px 0 0px;
 }
 
-.reset-password p a {
+.reset-password p  {
   color: #000;
   font-size: 1rem;
 }
@@ -1727,6 +1731,53 @@ img.popup-close-icon {
 .cart-main-wrapper.closed {
   display: none;
 }
+/* .checkout-table-main {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 0 -15px;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+.checkout-block {
+  width: calc(100%/3 - 30px);
+  margin: 0 15px 15px;
+}
+
+.checkout-content-item img {
+  max-width: 200px;
+}
+
+.checkout-content-quantity .quantity-control {
+  margin: 0 auto;
+}
+
+.checkout-content-prize * {
+  color: #000;
+} */
+table.checkout-table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+  border-spacing: 0;
+}
+
+.checkout-table td, th {
+  border: none;
+  text-align: center;
+  padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+.checkout-prize p{
+  color: #000;
+}
+td.checkout-img img {
+    max-width: 150px;
+}
+
+td.checkout-quantity .quantity-control {
+    margin: 0 auto;
+}
 @media (max-width: 599px) {
   .cart-tab-popup .cart-tab-popup-content {
     padding: 30px 15px;
@@ -1793,6 +1844,7 @@ img.popup-close-icon {
   .tab-content-card {
     width: calc(100% / 3 - 30px);
   }
+
 }
 
 @media (max-width: 768px) {
@@ -1811,7 +1863,9 @@ img.popup-close-icon {
     line-height: 1.2;
     font-size: 35px;
   }
-
+  table.checkout-table{
+    min-width: 700px;
+  }
   .banner-heading h2 {
     line-height: 1.2;
     font-size: 24px;
@@ -2059,3 +2113,4 @@ img.popup-close-icon {
     padding: 40px 0 30px;
   }
 }
+ 
