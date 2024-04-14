@@ -1,4 +1,3 @@
-
 // Functionality for tab navigation
 document.querySelectorAll('.arrival-tab-navs').forEach(function(tabNav) {
   tabNav.addEventListener('click', function() {
