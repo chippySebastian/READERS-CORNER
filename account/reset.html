@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style2.css">
+    <title>Forgot password</title>
+    <link rel="stylesheet" href="../style.css">
+   
 </head>
 <body>
     <header>
@@ -14,12 +14,12 @@
                 <div class="header-main">
                     <div class="header-logo">
                         <a href="/" target="_blank">
-                            <h2>BOOKERYY</h2>
+                            <h2>READER'S CORNER</h2>
                         </a>
                     </div>
                     <div class="login-wrapper">
                         <div class="btn-wrap">
-                            <a href="" class="button__primary">
+                            <a href="./login.html" class="button__primary">
                                 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="presentation" class="icon icon-account" fill="none" viewBox="0 0 18 19">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M6 4.5a3 3 0 116 0 3 3 0 01-6 0zm3-4a4 4 0 100 8 4 4 0 000-8zm5.58 12.15c1.12.82 1.83 2.24 1.91 4.85H1.51c.08-2.6.79-4.03 1.9-4.85C4.66 11.75 6.5 11.5 9 11.5s4.35.26 5.58 1.15zM9 10.5c-2.5 0-4.65.24-6.17 1.35C1.27 12.98.5 14.93.5 18v.5h17V18c0-3.07-.77-5.02-2.33-6.15-1.52-1.1-3.67-1.35-6.17-1.35z" fill="currentColor">
                           </path></svg>
@@ -46,11 +46,10 @@
             <div class="container-row">
                 <div class="header-nav-wrapper">
                     <ul class="navbar">
-                        <li><a href=""> HOME </a></li>
-                        <li><a href=""> PRODUCT </a></li>
-                        <li><a href=""> CHECKOUT </a></li>
-                        <li><a href=""> ABOUT </a></li>
-                        <li><a href=""> CONTACT US </a></li>
+                        <li><a href="../index.html"> HOME </a></li>
+							<li><a href="./product.html"> BOOKS </a></li>
+							<li><a href="./checkout.html"> CHECKOUT </a></li>
+							<li><a href="./login.html"> LOGIN </a></li>
                        
                     </ul>
                     <form class="search_form">
@@ -95,66 +94,7 @@
                 </div>
             </div>
         </section>
-        <section class="customer-account">
-            <div class="container-row">
-                <div class="customer-account-block">
-                    <div class="main-heading">
-						<h2 class="heading-title heading-line">LOGIN</h2>
-					</div>
-                    <div class="customer-account-main-form">
-                        <form action="">
-                            <input type="text" name="" id="" placeholder="EMAIL"> 
-                            <input type="text" name="" id="" placeholder="password">
-                            <button type="submit">
-                               Sign In
-                            </button>
-                        </form>
-                        <div class="reset-password">
-                            <p>
-                                <a href="">
-                                    Forget password
-                                </a>
-                            </p>
-                            <p>
-                                <a href="">
-                                   Login/resgister
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="customer-account">
-            <div class="container-row">
-                <div class="customer-account-block">
-                    <div class="main-heading">
-						<h2 class="heading-title heading-line">REGISTER</h2>
-					</div>
-                    <div class="customer-account-main-form">
-                        <form action="">
-                            <input type="text" name="" id="" placeholder="First Name"> 
-                            <input type="text" name="" id="" placeholder="Last Name">
-                            <input type="email" name="" id="" placeholder="Email"> 
-                            <input type="password" name="" id="" placeholder="password">
-                            <button type="submit">
-                               Register
-                            </button>
-                        </form>
-                        <div class="reset-password">
-                           
-                            <p>
-                                <a href="">
-                                   Already have an account?
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="customer-account">
+        <section class="customer-account reset">
             <div class="container-row">
                 <div class="customer-account-block">
                     <div class="main-heading">
@@ -169,8 +109,9 @@
                         </form>
                         <div class="reset-password">
                             <p>
-                                <a href="">
-                                   Already have an account?
+                                Already have an account? 
+                                <a href="./login.html">
+                                  <bold>Click here</bold>
                                 </a>
                             </p>
                         </div>
@@ -223,6 +164,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
 		integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-		<script src="main.js"></script>
+		<script src="../main.js"></script>
 </body>
 </html>

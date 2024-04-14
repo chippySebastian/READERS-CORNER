@@ -1,44 +1,90 @@
-// $('.arrival-tab-navs').click(function () {
-//     var tab_id = $(this).attr('data-tab');
-  
-//     $('.arrival-tab-navs').removeClass('active');
-//     $('.arrival-tab-content').removeClass('active');
-  
-//     $('.arrival-tab-navs[data-tab=' + tab_id + ']').addClass('active');
-//     $("#" + tab_id).addClass('active');
-  
-// });
 
-$('.filter-accordion .filter-acco-header').click(function() {
-  $(this).toggleClass('active').next('.filter-acco-content').slideToggle();
-  $('.filter-acco-header').not(this).removeClass('active').next('.filter-acco-content').slideUp();
+// Functionality for tab navigation
+document.querySelectorAll('.arrival-tab-navs').forEach(function(tabNav) {
+  tabNav.addEventListener('click', function() {
+    var tab_id = this.getAttribute('data-tab');
+    
+    // Remove 'active' class from all tab navs and contents
+    document.querySelectorAll('.arrival-tab-navs').forEach(function(nav) {
+      nav.classList.remove('active');
+    });
+    document.querySelectorAll('.arrival-tab-content').forEach(function(content) {
+      content.classList.remove('active');
+    });
+    
+    // Add 'active' class to the clicked tab nav and corresponding content
+    this.classList.add('active');
+    document.getElementById(tab_id).classList.add('active');
+  });
 });
 
+// Functionality for filter accordion
+document.querySelectorAll('.filter-accordion .filter-acco-header').forEach(function(header) {
+  header.addEventListener('click', function() {
+    this.classList.toggle('active');
+    var content = this.nextElementSibling;
+    if (content.style.display === 'block') {
+      content.style.display = 'none';
+    } else {
+      content.style.display = 'block';
+    }
+    
+    // Collapse other accordions
+    document.querySelectorAll('.filter-acco-header').forEach(function(otherHeader) {
+      if (otherHeader !== header) {
+        otherHeader.classList.remove('active');
+        otherHeader.nextElementSibling.style.display = 'none';
+      }
+    });
+  });
+});
+
+// Functionality for hamburger menu
 const hampMenu = document.querySelector(".hamburger-menu-design-icon");
 const navbar = document.querySelector(".header-nav");
 const bodyTag = document.querySelector("body");
-hampMenu.addEventListener("click", () => {
+hampMenu.addEventListener("click", function() {
   hampMenu.classList.toggle("open");
   navbar.classList.toggle("open");
   bodyTag.classList.toggle("o-hidden");
 });
 
-
-document.addEventListener("DOMContentLoaded", () => {
-  console.log(document);
-  let newArrivalButton=document.querySelectorAll(".arrival-tab-navs");
-  console.log(newArrivalButton);
-  
-  for(let i=0; i<newArrivalButton.length; i++){
-    newArrivalButton[i].addEventListener("click",navToggleBar)
-  }
+// Cart popup 
+document.querySelectorAll('.open-cart-popup').forEach(function(button) {
+  button.addEventListener('click', function() {
+    document.querySelector('.cart-tab-popup').classList.add('opened');
+    document.body.classList.add('o-hidden');
+  });
 });
 
-function navToggleBar(){
-  console.log(this.dataset.tab);
-  let tabId = this.dataset.tab;
-  let tabContentClass = this.dataset.tabContentClass;
-  console.log(tabContentClass);
-  console.log(document.querySelector("arrival-tab-content"))
-  this.classList.remove("active");
-}
+document.querySelectorAll('.black-overlay, .cart-tab-popu-back').forEach(function(element) {
+  element.addEventListener('click', function() {
+    document.querySelector('.cart-tab-popup').classList.remove('opened');
+    document.body.classList.remove('o-hidden');
+  });
+});
+
+// Plugin functionality for Quantity
+(function () {
+  "use strict";
+  function Guantity($root) {
+    const quantity_target = $root.querySelector("[data-quantity-target]");
+    const quantity_minus = $root.querySelector("[data-quantity-minus]");
+    const quantity_plus = $root.querySelector("[data-quantity-plus]");
+    var quantity_ = parseInt(quantity_target.value);
+    
+    quantity_minus.addEventListener('click', function () {
+      quantity_target.value = --quantity_;
+    });
+    
+    quantity_plus.addEventListener('click', function () {
+      quantity_target.value = ++quantity_;
+    });
+  }
+  
+  window.Guantity = Guantity;
+  
+  document.querySelectorAll("[data-quantity]").forEach(function(element) {
+    Guantity(element);
+  });
+})();

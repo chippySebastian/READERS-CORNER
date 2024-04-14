@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cart Page</title>
+        <link rel="stylesheet" href="style.css">
+       
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <div class="container-row">
+                    <div class="header-main">
+                        <div class="header-logo">
+                            <a href="/" target="_blank">
+                                <h2>READER'S CORNER</h2>
+                            </a>
+                        </div>
+                        <div class="login-wrapper">
+                            <div class="btn-wrap">
+                                <a href="./account/login.html" class="button__primary">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        aria-hidden="true"
+                                        focusable="false" role="presentation"
+                                        class="icon icon-account"
+                                        fill="none" viewBox="0 0 18 19">
+                                        <path fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M6 4.5a3 3 0 116 0 3 3 0 01-6 0zm3-4a4 4 0 100 8 4 4 0 000-8zm5.58 12.15c1.12.82 1.83 2.24 1.91 4.85H1.51c.08-2.6.79-4.03 1.9-4.85C4.66 11.75 6.5 11.5 9 11.5s4.35.26 5.58 1.15zM9 10.5c-2.5 0-4.65.24-6.17 1.35C1.27 12.98.5 14.93.5 18v.5h17V18c0-3.07-.77-5.02-2.33-6.15-1.52-1.1-3.67-1.35-6.17-1.35z"
+                                            fill="currentColor">
+                                        </path></svg>
+                                    LOGOUT
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="hamburger-menu">
+                            <div class="hamburger-menu-design">
+                                <div class="hamburger-menu-design-icon">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="header-nav">
+                <div class="container-row">
+                    <div class="header-nav-wrapper">
+                        <ul class="navbar">
+                            <li><a href="./index.html"> HOME </a></li>
+							<li><a href="./product.html"> BOOKS </a></li>
+							<li><a href="./checkout.html"> CHECKOUT </a></li>
+							<li><a href="./account/login.html"> LOGIN </a></li>
+
+                        </ul>
+                        <div class="customer__info">
+                            <a href="./cart.html"
+                                class="header__icon">
+                                <img src="./images/icons/shoping.svg" alt="">
+                            </a>
+                            <form class="search_form">
+                                <input
+                                    type="search"
+                                    class="form-control"
+                                    placeholder="Search here..." />
+                                <button class type="submit">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="#fff"
+                                        width="35px"
+                                        height="35px"
+                                        viewBox="0 0 1024 1024">
+                                        <path
+                                            d="M768 713.7L630.2 575.9c22.3-32.8 35.4-72.4 35.4-115.1 0-113.1-91.7-204.8-204.8-204.8S256 347.7 256 460.8s91.7 204.8 204.8 204.8c42.7 0 82.3-13.1 115.1-35.4L713.7 768l54.3-54.3zM332.8 460.8c0-70.6 57.4-128 128-128s128 57.4 128 128-57.4 128-128 128-128-57.4-128-128z" />
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </header>
+        <main>
+            <section class="inner-banner">
+                <div class="container-row">
+                    <div class="inner-banner-heading">
+                      <h3>
+                        Amazing books on your way
+                      </h3>
+                    </div>
+                </div>
+            </section>
+            <section class="cart-page">
+                <div class="container-row">
+                    <div class="cart-main-wrapper">
+                        <div class="cart-item__img">
+                            <img src="./images/book11.webp" alt>
+                        </div>
+                        <div class="cart-item__context">
+                            <div class="cart-item__info">
+                                <h3 class="cart-item__title"> Book</h3>
+                                <p class="cart-item__description"> Lorem ipsum
+                                    dolor sit amet consectetur adipisicing elit.
+                                    At fugiat illo doloremque in mollitia
+                                    adipisci omnis placeat, quisquam est sint
+                                    fuga optio, quidem sequi, provident
+                                    praesentium ratione nihil! Quam,
+                                    corporis?</p>
+                                <p class="cart-item__price">
+                                    <bold>$12.00</bold>
+                                </p>
+                            </div>
+                            <div class="cart-item-quantity">
+                                <span>QUANTITY</span>
+                                <div class="quantity-control" data-quantity>
+                                    <button class="quantity-btn"
+                                        data-quantity-minus>
+                                        <svg viewBox="0 0 409.6 409.6">
+                                            <g>
+                                                <g>
+                                                    <path
+                                                        d="M392.533,187.733H17.067C7.641,187.733,0,195.374,0,204.8s7.641,17.067,17.067,17.067h375.467 c9.426,0,17.067-7.641,17.067-17.067S401.959,187.733,392.533,187.733z"></path>
+                                                </g>
+                                            </g>
+                                        </svg></button>
+                                    <input type="number" class="quantity-input"
+                                        data-quantity-target value="1" step="1"
+                                        min="1" max name="quantity">
+                                    <button class="quantity-btn"
+                                        data-quantity-plus><svg
+                                            viewBox="0 0 426.66667 426.66667">
+                                            <path
+                                                d="m405.332031 192h-170.664062v-170.667969c0-11.773437-9.558594-21.332031-21.335938-21.332031-11.773437 0-21.332031 9.558594-21.332031 21.332031v170.667969h-170.667969c-11.773437 0-21.332031 9.558594-21.332031 21.332031 0 11.777344 9.558594 21.335938 21.332031 21.335938h170.667969v170.664062c0 11.777344 9.558594 21.335938 21.332031 21.335938 11.777344 0 21.335938-9.558594 21.335938-21.335938v-170.664062h170.664062c11.777344 0 21.335938-9.558594 21.335938-21.335938 0-11.773437-9.558594-21.332031-21.335938-21.332031zm0 0"></path></svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="cart-item-purchase">
+                                <div class="btn-wrap">
+                                    <div class="btns">
+                                        <a
+                                            class="open-cart-popup button__primary">Add
+                                            to
+                                            Cart</a>
+                                    </div>
+                                    <div class="btns">
+                                        <a href="/" target="_blank"
+                                            class="button__primary"> Add to
+                                            Wishlist
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="btn-wrap">
+                                    <div class="btns">
+                                        <a href="/" target="_blank"
+                                            class="button__primary">Buy it
+                                            Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-tab-popup">
+                    <div class="black-overlay"></div>
+                    <div class="cart-tab-popup-content">
+                        <div class="cart-tab-popu-back">
+                            <span>Back</span>
+                        </div>
+                        <div id="session-content">
+                            <div class="cart-popup-main-content">
+                                <img class="popup-close-icon"
+                                    src="./images/icons/close.svg" alt>
+                                <div class="cart-main-wrapper">
+                                    <div class="cart-item__img">
+                                        <img src="./images/book11.webp" alt>
+                                    </div>
+                                    <div class="cart-item__context">
+                                        <div class="cart-item__info">
+                                            <h3 class="cart-item__title">
+                                                Book</h3>
+                                            <p class="cart-item__price">
+                                                <bold>$12.00</bold>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart-item-purchase">
+                                    <div class="btn-wrap">
+                                        <div class="btns">
+                                            <a href="/" target="_blank"
+                                                class="button__primary">Proceed
+                                                to Checkout
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="session-content">
+                            <div class="cart-popup-main-content">
+                                <img class="popup-close-icon"
+                                    src="./images/icons/close.svg" alt>
+                                <div class="cart-main-wrapper">
+                                    <div class="cart-item__img">
+                                        <img src="./images/book3.jpg" alt>
+                                    </div>
+                                    <div class="cart-item__context">
+                                        <div class="cart-item__info">
+                                            <h3 class="cart-item__title">
+                                                Book</h3>
+                                            <p class="cart-item__price">
+                                                <bold>$12.00</bold>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart-item-purchase">
+                                    <div class="btn-wrap">
+                                        <div class="btns">
+                                            <a href="/" target="_blank"
+                                                class="button__primary">Proceed
+                                                to Checkout
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer footer-bg">
+            <div class="container-row">
+                <div class="footer-row">
+                    <div class="footer-col">
+                        <h4>EXHIBITION OPENING TIMES</h4>
+                        <h5>Monday 1 July, 9:00-18:00</h5>
+                        <h5>Tuesday 2 July, 9:00-18:00</h5>
+                        <h5>Wednesday 3 July, 9:00-14:00</h5> </div>
+                    <div class="footer-col">
+                        <h4>QUICK LINKS</h4>
+                        <h5><a href="/" title="Home">Home</a></h5>
+                        <h5><a href
+                                title>About Us</a></h5>
+                        <h5><a href
+                                title>Exhibition</a></h5>
+                        <h5><a href title>Sponsorship book</a></h5>
+                    </div>
+                    <div class="footer-col footer-col-last">
+                        <h4>CONTACT US</h4>
+                        <div class="footer-inner-col">
+                            <h5>
+                                Sponsorship &amp; Exhibition Opportunities <a
+                                    href>sales@bookery.com</a>
+                            </h5>
+                            <h5>
+                                Speaking Enquiry <a
+                                    href>conference@bookery.com</a>
+                            </h5>
+                            <h5>
+                                Delegate Enquiry <a
+                                    href>info@bookery.com</a>
+                            </h5>
+                            <h5>
+                                Marketing &amp; PR Enquiries <a
+                                    href>marketing@bookery.com</a>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
