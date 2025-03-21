@@ -1,7 +1,8 @@
 
 # 📚 Online Bookstore
 
-An elegant and user-friendly **online bookstore web application** built using HTML, designed to showcase and sell books online. 
+An elegant and user-friendly online bookstore web application frontend built using HTML, designed to showcase and display books online. This project focuses solely on the frontend interface without backend functionality.
+
 
 ## 🎯 **Features**
 - 🛒 **Browse Books:** View a collection of books with cover images, titles, and prices.
