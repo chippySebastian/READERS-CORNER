@@ -14,15 +14,6 @@ An elegant and user-friendly **online bookstore web application** built using HT
 - **CSS** – For styling the UI (if applicable).
 - **JavaScript** – For interactivity (if applicable).
 
-## 🌐 **Live Demo**
-[View the live demo](#) – (Add the link after deployment)
-
-## 📸 **Screenshots**
-![Homepage](link-to-image-1)  
-*The homepage showcasing featured books.*
-
-![Book Details](link-to-image-2)  
-*Detailed view of a book with description and price.*
 
 ## ⚙️ **Installation**
 1. Clone the repository:
